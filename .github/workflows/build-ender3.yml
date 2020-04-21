@@ -22,7 +22,7 @@ jobs:
     - name: Run PlatformIO
       run: platformio run .
     - name: Upload builded firmware
-        uses: actions/upload-artifact@v1
-        with:
-          name: ender3-mesh-bl-5x5.hex
-          path: .pio/build/sanguino1284p/firmware.hex
+      uses: actions/upload-artifact@v1
+      with:
+        name: ender3-mesh-bl-5x5.hex
+        path: .pio/build/sanguino1284p/firmware.hex
